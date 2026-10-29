@@ -1,0 +1,175 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f4ff;
+  color: #25254a;
+  min-height: 100vh;
+}
+
+header {
+  background: linear-gradient(135deg, #6257e8, #9185ff);
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+header h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 15px;
+}
+
+main {
+  width: 90%;
+  max-width: 800px;
+  margin: 25px auto;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.card,
+.task-form,
+.tasks {
+  background: white;
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px #25254a12;
+}
+
+.card h3 {
+  font-size: 15px;
+  color: #686886;
+}
+
+.card p {
+  font-size: 30px;
+  font-weight: bold;
+  color: #6257e8;
+  margin-top: 12px;
+}
+
+h2 {
+  font-size: 21px;
+  margin-bottom: 18px;
+}
+
+.task-form {
+  margin-bottom: 22px;
+}
+
+input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #deddf3;
+  border-radius: 9px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  background: #fcfcff;
+}
+
+button {
+  border: none;
+  border-radius: 9px;
+  padding: 12px 17px;
+  cursor: pointer;
+  font-size: 15px;
+  background: #6257e8;
+  color: white;
+}
+
+#addBtn {
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 0;
+  border-bottom: 1px solid #eeeefa;
+}
+
+.task-info {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.task-info h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.task-info p {
+  font-size: 13px;
+  color: #77778c;
+  margin-top: 4px;
+}
+
+.task-item.done .task-info h3 {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.complete-btn {
+  background: #e5f8ed;
+  color: #167a42;
+  padding: 9px;
+}
+
+.delete-btn {
+  background: #ffe8e8;
+  color: #bd3030;
+  padding: 9px;
+}
+
+#emptyMessage {
+  color: #77778c;
+  text-align: center;
+  padding: 15px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #77778c;
+  font-size: 13px;
+}
+
+@media (max-width: 450px) {
+  main {
+    width: 94%;
+  }
+
+  .card,
+  .task-form,
+  .tasks {
+    padding: 16px;
+  }
+
+  header h1 {
+    font-size: 25px;
+  }
+
+  .task-item {
+    flex-wrap: wrap;
+  }
+}

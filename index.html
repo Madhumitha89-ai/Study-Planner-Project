@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📚 Study Planner</h1>
+    <p>Plan your day. Achieve your goals.</p>
+  </header>
+
+  <main>
+    <section class="summary">
+      <div class="card">
+        <h3>Total Tasks</h3>
+        <p id="total">0</p>
+      </div>
+      <div class="card">
+        <h3>Completed</h3>
+        <p id="completed">0</p>
+      </div>
+    </section>
+
+    <section class="task-form">
+      <h2>Add Study Task</h2>
+      <input id="taskInput" type="text" placeholder="Enter task name">
+      <input id="subjectInput" type="text" placeholder="Subject">
+      <input id="dateInput" type="date">
+      <button id="addBtn">+ Add Task</button>
+    </section>
+
+    <section class="tasks">
+      <h2>My Tasks</h2>
+      <div id="taskList"></div>
+      <p id="emptyMessage">No tasks yet. Add your first study task!</p>
+    </section>
+  </main>
+
+  <footer>Study Planner © 2026 | Keep Learning 🌟</footer>
+  <script src="script.js"></script>
+</body>
+</html>
