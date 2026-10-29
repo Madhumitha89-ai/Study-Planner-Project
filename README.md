@@ -4,7 +4,7 @@ A simple and user-friendly web application designed to help students organize th
 
 ## 🌐 Live Demo
 
-**Study Planner Website:** https://clever-hoops-obey.loca.lt
+**Study Planner Website:** https://clever-hoops-obey.loca.lt?utm_source=chatgpt.com
 
 > Note: This is a temporary LocalTunnel link. It works only while your laptop server and tunnel are running. Replace it with your permanent GitHub Pages URL after deployment.
 
